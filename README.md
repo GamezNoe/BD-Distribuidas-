@@ -1,4 +1,4 @@
-# 🧠 Bases de Datos Distribuidas
+# 🧠 Repositorio de Base de Datos Distribuidas
 
 Este repositorio contiene trabajos prácticos, apuntes y configuraciones realizadas durante la cursada de la materia **Bases de Datos Distribuidas**. La idea es tener todo ordenado y accesible, tanto para repasar como para compartir si hace falta.
 
