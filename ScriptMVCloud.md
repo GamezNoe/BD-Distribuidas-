@@ -56,6 +56,9 @@ CREATE TABLE CentrosMedicos (
     Telefono VARCHAR(20) 
 
 ); 
+INSERT INTO CentrosMedicos (Nombre, Ciudad, Direccion, Telefono)
+VALUES ('Hospital Central', 'Quito', 'Av. Amazonas 1234', '022345678');
+
 
 -- CREACION DE TABLAS 
 CREATE TABLE UsuariosCentro ( 
@@ -71,6 +74,8 @@ CREATE TABLE UsuariosCentro (
     FOREIGN KEY (CentroID) REFERENCES CentrosMedicos(CentroID) 
 
 ); 
+INSERT INTO UsuariosCentro (CentroID, Email, Contrasena)
+VALUES (1, 'noemi@ecentroguayaquil.com', '2003');
 
 
 
