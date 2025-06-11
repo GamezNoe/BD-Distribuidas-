@@ -1,7 +1,7 @@
 
 https://github.com/d4vhost/GestionHospitalaria
 
-##Comando para instalar el mysql en maquinas virtuales 
+### Comando para instalar el mysql en maquinas virtuales 
 - `sudo apt update && sudo apt upgrade -y`
 - `sudo apt install mysql-server -y`
 - `sudo mysql_secure_installation
@@ -10,18 +10,18 @@ https://github.com/d4vhost/GestionHospitalaria
 - `sudo mysql
 #Si no se tiene instalado vi o nano se lo debe instalar 
 - sudo install vi
-##Creacionn de usuarios 
+### Creacionn de usuarios 
 > Create User 'centromedico'@'%' IDENTIFIED BY 'centromedico@123'
 > GRANT ALL PRIVILEGES ON *.* TO 'centromedico'@'%' WITH GRANT OPTION;
 > FLUSH PRIVILEGES	;
 
-##Pasos para conectarte por ssh desde la PC
----- Primero debes crear un usuario 
+### Pasos para conectarte por ssh desde la PC
+- Primero debes crear un usuario 
 sudo adduser noemi
 sudo usermod -aG sudo noemi
 
 contraseña: 2003
------
+
 1. Crear el directorio
 -- `sudo mkdir -p /home/noemi/.ssh
 2. Ediatar el archivo de claves publicas
@@ -37,7 +37,7 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKDDbUIhw3ExsdjLMqzgYnviKrX+ioHvOfEhN3Wc3CHr
 -- `ssh noemi@35.237.26.117
 
 
-## Creacion de la base de datos 
+### Creacion de la base de datos 
 CREATE
 
 -- Tabla de centros médicos 
