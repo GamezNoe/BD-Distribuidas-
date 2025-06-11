@@ -21,7 +21,9 @@ Primero debes crear un usuario
 - `sudo usermod -aG sudo noemi`
 
 contraseña: 2003
-
+-En la maquina si es que no esta, se crea con este comando para Windows
+- `ssh-keygen`
+- `Get-Content $env:USERPROFILE\.ssh\id_rsa.pub`
 1. Crear el directorio
 - `sudo mkdir -p /home/noemi/.ssh`
 2. Ediatar el archivo de claves publicas
