@@ -8,17 +8,17 @@ https://github.com/d4vhost/GestionHospitalaria
 - `sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf`
 - `sudo systemctl restart mysql`
 - `sudo mysql`
-#Si no se tiene instalado vi o nano se lo debe instalar 
-- sudo install vi
+##### Si no se tiene instalado vi o nano se lo debe instalar 
+- `sudo install vi`
 ### Creacionn de usuarios 
 > Create User 'centromedico'@'%' IDENTIFIED BY 'centromedico@123'
 > GRANT ALL PRIVILEGES ON *.* TO 'centromedico'@'%' WITH GRANT OPTION;
 > FLUSH PRIVILEGES	;
 
 ### Pasos para conectarte por ssh desde la PC
-- Primero debes crear un usuario 
+Primero debes crear un usuario 
 - `sudo adduser noemi`
--- `sudo usermod -aG sudo noemi`
+- `sudo usermod -aG sudo noemi`
 
 contraseña: 2003
 
@@ -29,12 +29,12 @@ contraseña: 2003
  la clave: 
 `ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKDDbUIhw3ExsdjLMqzgYnviKrX+ioHvOfEhN3Wc3CHr noemi@Gamez`
 3. Establece lso permisos correctos
-`sudo chown -R noemi:noemi /home/noemi/.ssh`
-`sudo chmod 700 /home/noemi/.ssh`
-`sudo chmod 600 /home/noemi/.ssh/authorized_keys`
+- `sudo chown -R noemi:noemi /home/noemi/.ssh`
+- `sudo chmod 700 /home/noemi/.ssh`
+- `sudo chmod 600 /home/noemi/.ssh/authorized_keys`
 
 4. Conectarse desde tu pc
--- `ssh noemi@35.237.26.117`
+- `ssh noemi@35.237.26.117`
 
 
 ### Creacion de la base de datos 
@@ -162,9 +162,9 @@ CREATE TABLE Clientes (
 ### Replicacion 
 
 ### Conexion con el mysql Workbench
-`CREATE USER 'admin'@'164.163.160.126' IDENTIFIED BY '$User$Not$Found$404';`
-`GRANT ALL PRIVILEGES ON *.* TO 'admin'@'164.163.160.126' WITH GRANT OPTION;`
-`FLUSH PRIVILEGES;`
+- `CREATE USER 'admin'@'164.163.160.126' IDENTIFIED BY '$User$Not$Found$404';`
+- `GRANT ALL PRIVILEGES ON *.* TO 'admin'@'164.163.160.126' WITH GRANT OPTION;`
+- `FLUSH PRIVILEGES;`
 
 - Hostname: 35.237.26.117
 - Username: admin 
